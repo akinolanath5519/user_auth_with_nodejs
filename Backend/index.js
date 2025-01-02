@@ -1,6 +1,6 @@
 // Importing necessary modules
 const express=require('express');
-const connectDB=require('./config/db');
+const connectDBS=require('./config/db');
 const userRoutes=require('./routes/userRoutes')
 
 
@@ -8,7 +8,7 @@ const userRoutes=require('./routes/userRoutes')
 const app=express();
 
 //connect database
-connectDB();
+connectDBS();
 
 // Middleware to parse JSON
 app.use(express.json());
